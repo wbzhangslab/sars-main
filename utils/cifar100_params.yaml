@@ -1,0 +1,74 @@
+---
+
+type: image
+dataset: CIFAR-100
+test_batch_size: 1000
+lr: 0.1
+momentum: 0.9
+decay: 0.0005
+batch_size: 64
+mu: 1.0
+
+no_models: 10
+epochs: 300
+retrain_no_times: 3
+milestones: [2, 4, 6]
+
+number_of_total_participants: 100
+sampling_dirichlet: true
+dirichlet_alpha: 0.5
+eta: 1.0
+
+p: 2
+beta: 300
+
+save_model: false
+save_on_epochs: [10, 100, 500, 1000, 2000, 5000]
+#resumed_model: false
+#resumed_model: recover/model_cifar_10k.pt.tar
+#resumed_model: model_image_Aug.20_10.38.31/model_last.pt.tar.epoch
+
+resumed_model:
+environment_name: ppdl_experiment
+
+# pixel pattern Backdoor(true)
+modify_poison: true
+
+# Semantic Backdoor(Semantic Characteristic)
+poison_type: wall
+
+# manually chosen images for tests
+poison_images_test: [330, 568, 3934, 12336, 30560]
+poison_images: [30696, 33105, 33615, 33907, 36848, 40713, 41706]
+
+# target label
+poison_label_swap: 2
+size_of_secret_dataset: 100
+poisoning_per_batch: 7
+poison_test_repeat: 1000
+is_poison: true
+random_compromise: false
+noise_level: 0.01
+
+# trigger
+poison_patterns: [[0, 0], [0, 1],  [0, 2],  [0, 3],  [0, 4],  [0, 5],
+                  [0, 9], [0, 10], [0, 11], [0, 12], [0, 13], [0, 14],
+                  [4, 0], [4, 1],  [4, 2],  [4, 3],  [4, 4],  [4, 5],
+                  [4, 9], [4, 10], [4, 11], [4, 12], [4, 13], [4, 14]]
+
+retrain_poison: 3
+scale_weights: 1.0
+poison_lr: 0.1
+poison_momentum: 0.9
+poison_decay: 0.005
+poison_step_lr: true
+clamp_value: 1.0
+alpha_loss: 1.0
+number_of_adversaries: 1
+poisoned_number: 10
+results_json: true
+
+# simple tunning flag
+ST_flag: false
+ST_lr: 0.1
+ST_retrain_times: 3
