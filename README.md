@@ -1,9 +1,9 @@
-# SARS: A Personalization Perspective towards Fair and Robust against
+# [ACM UbiComp/IMWUT24] SARS: A Personalized Federated Learning Framework Towards Fairness and Robustness against Backdoor Attacks
 
 
 
 This repository provides the official PyTorch implementation for the following paper:
->**SARS: A Personalization Perspective towards Fair and Robust against**
+>**SARS: A Personalized Federated Learning Framework Towards Fairness and Robustness against Backdoor Attacks**
 >
 > **Abstract:** *Federated Learning (FL), an emerging distributed machine learning framework that enables each client to collaboratively train
 a global model by sharing local knowledge without disclosing local private data, is vulnerable to backdoor model poisoning
