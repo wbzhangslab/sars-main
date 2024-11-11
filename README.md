@@ -5,7 +5,8 @@
 This repository provides the official PyTorch implementation for the following paper:
 >**SARS: A Personalized Federated Learning Framework Towards Fairness and Robustness against Backdoor Attacks**
 >
-> **Abstract:** *Federated Learning (FL), an emerging distributed machine learning framework that enables each client to collaboratively train
+
+**Abstract:** *Federated Learning (FL), an emerging distributed machine learning framework that enables each client to collaboratively train
 a global model by sharing local knowledge without disclosing local private data, is vulnerable to backdoor model poisoning
 attacks. By compromising some users, the attacker manipulates their local training process, and uploads malicious gradient
 updates to poison the global model, resulting in the poisoned global model behaving abnormally on the sub-tasks specified by
