@@ -58,5 +58,27 @@ python main.py --params utils/cifar10_params.yaml
              \ --attack dba
 ```
 
+## BibTex Citation
+```shell
+@article{10.1145/3678571,
+author = {Zhang, Weibin and Li, Youpeng and An, Lingling and Wan, Bo and Wang, Xuyu},
+title = {SARS: A Personalized Federated Learning Framework Towards Fairness and Robustness against Backdoor Attacks},
+year = {2024},
+issue_date = {November 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {8},
+number = {4},
+url = {https://doi.org/10.1145/3678571},
+doi = {10.1145/3678571},
+abstract = {Federated Learning (FL), an emerging distributed machine learning framework that enables each client to collaboratively train a global model by sharing local knowledge without disclosing local private data, is vulnerable to backdoor model poisoning attacks. By compromising some users, the attacker manipulates their local training process, and uploads malicious gradient updates to poison the global model, resulting in the poisoned global model behaving abnormally on the sub-tasks specified by the malicious user. Prior research has proposed various strategies to mitigate backdoor attacks. However, existing FL backdoor defense methods affect the fairness of the FL system, while fair FL performance may not be robust. Motivated by these concerns, in this paper, we propose Self-Awareness Revision (SARS), a personalized FL framework designed to resist backdoor attacks and ensure the fairness of the FL system. SARS consists of two key modules: adaptation feature extraction and knowledge mapping. In the adaptation feature extraction module, benign users can adaptively extract clean global knowledge with self-awareness and self-revision of the backdoor knowledge transferred from the global model. Based on the previous module, users can effectively ensure the correct mapping of clean sample features and labels. Through extensive experimental results, SARS can defend against backdoor attacks and improve the fairness of the FL system by comparing several state-of-the-art FL backdoor defenses or fair FL methods, including FedAvg, Ditto, WeakDP, FoolsGold, and FLAME.},
+journal = {Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.},
+month = nov,
+articleno = {140},
+numpages = {24},
+keywords = {Attention Distillation, Backdoor Attack, Fairness, Federated Learning}
+}
+```
+
 ## Acknowlegements
 Our code is inspired by [DBA](https://github.com/AI-secure/DBA) and [PFLlib](https://github.com/TsingZ0/PFLlib).
