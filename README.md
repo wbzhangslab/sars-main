@@ -20,6 +20,8 @@ previous module, users can effectively ensure the correct mapping of clean sampl
 experimental results, SARS can defend against backdoor attacks and improve the fairness of the FL system by comparing
 several state-of-the-art FL backdoor defenses or fair FL methods, including FedAvg, Ditto, WeakDP, FoolsGold, and FLAME.*
 
+![SARS](sars.jpg "SARS")
+
 ## Installation
 This repository is built in PyTorch 1.8.1 and tested on CUDA 12.1. See requirements.txt for the installation of dependencies required to run SARS.
 
