@@ -1,4 +1,4 @@
-# [ACM UbiComp/IMWUT24] SARS: A Personalized Federated Learning Framework Towards Fairness and Robustness against Backdoor Attacks
+# [ACM IMWUT24] SARS: A Personalized Federated Learning Framework Towards Fairness and Robustness against Backdoor Attacks
 
 
 
