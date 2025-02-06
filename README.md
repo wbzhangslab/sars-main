@@ -1,4 +1,4 @@
-# [ACM IMWUT24] SARS: A Personalized Federated Learning Framework Towards Fairness and Robustness against Backdoor Attacks
+# [ACM IMWUT24] [SARS: A Personalized Federated Learning Framework Towards Fairness and Robustness against Backdoor Attacks](https://dl.acm.org/doi/10.1145/3678571)
 
 
 
@@ -61,22 +61,22 @@ python main.py --params utils/cifar10_params.yaml
 ```
 
 ## BibTex Citation
-```shell
+```python
 @article{10.1145/3678571,
-author = {Zhang, Weibin and Li, Youpeng and An, Lingling and Wan, Bo and Wang, Xuyu},
-title = {SARS: A Personalized Federated Learning Framework Towards Fairness and Robustness against Backdoor Attacks},
-year = {2024},
-issue_date = {November 2024},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {8},
-number = {4},
-url = {https://doi.org/10.1145/3678571},
-doi = {10.1145/3678571},
-month = nov,
-articleno = {140},
-numpages = {24},
-keywords = {Attention Distillation, Backdoor Attack, Fairness, Federated Learning}
+  author = {Zhang, Weibin and Li, Youpeng and An, Lingling and Wan, Bo and Wang, Xuyu},
+  title = {SARS: A Personalized Federated Learning Framework Towards Fairness and Robustness against Backdoor Attacks},
+  year = {2024},
+  issue_date = {November 2024},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {8},
+  number = {4},
+  url = {https://doi.org/10.1145/3678571},
+  doi = {10.1145/3678571},
+  month = nov,
+  articleno = {140},
+  numpages = {24},
+  keywords = {Attention Distillation, Backdoor Attack, Fairness, Federated Learning}
 }
 ```
 
